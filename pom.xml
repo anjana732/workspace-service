@@ -8,7 +8,7 @@
 		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.workspace-service</groupId>
+	<groupId>com.systemlens</groupId>
 	<artifactId>workspace-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
