@@ -1,1 +1,25 @@
-spring.application.name=workspace-service
+spring:
+  application:
+    name: workspace-service
+
+  datasource:
+    url: jdbc:postgresql://localhost5434/systemlens_workspace
+    username: postgres
+    password: anjana
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
+
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
