@@ -1,11 +1,13 @@
 spring:
+  config:
+    import: optional:file:.env[.properties]
   application:
     name: workspace-service
 
   datasource:
-    url: jdbc:postgresql://localhost5434/systemlens_workspace
-    username: postgres
-    password: anjana
+    url: ${SYSTEMLENS_DB_URL}
+    username: ${SYSTEMLENS_DB_USERNAME}
+    password: ${SYSTEMLENS_DB_PASSWORD}
 
   jpa:
     hibernate:
