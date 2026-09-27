@@ -11,7 +11,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "workspaces")
-public class workspace {
+public class Workspace {
     @Id
     private UUID id;
 
@@ -26,11 +26,11 @@ public class workspace {
     @Column(name = "updated_at", nullable = false)
     private Instant updatedAt;
 
-    protected workspace() {
+    protected Workspace() {
 
     }
 
-    public workspace(
+    public Workspace(
             UUID id,
             String name,
             String description,
